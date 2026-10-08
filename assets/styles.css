@@ -340,3 +340,7 @@ button[disabled]{opacity:.6;cursor:wait}
 /* dropdown open/close: stays open briefly so the pointer can travel into it */
 .dropdown{display:grid!important;visibility:hidden;opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s,visibility 0s linear .25s;z-index:30}
 .menu > li:hover > .dropdown,.menu > li:focus-within > .dropdown{visibility:visible;opacity:1;transform:none;transition-delay:0s;z-index:31}
+
+/* logo identical in header and footer */
+.logo{color:var(--fg)}
+.foot .logo{font-size:19px}
