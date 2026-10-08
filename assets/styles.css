@@ -351,3 +351,16 @@ button[disabled]{opacity:.6;cursor:wait}
 .menu > li:last-child > .dropdown{left:auto;right:0;min-width:260px}
 @media (max-width:1180px){.dropdown{min-width:270px}}
 .contact h2{color:var(--fg)}
+/* "Under attack?" button in the header */
+.nav-cta .alert-btn{padding:9px 14px;font-size:13.5px;white-space:nowrap}
+.mobile-panel .mob-alert{padding-top:14px}
+.mobile-panel .mob-alert a.alert-btn{display:inline-flex;border:1px solid var(--alert);padding:10px 14px}
+.mob-alert{display:none}
+@media (max-width:520px){.nav-cta .alert-btn{display:none}.mob-alert{display:block}}
+/* desktop: "Under attack?" stacked under "Get a Consultation" */
+@media (min-width:981px){
+  .nav .wrap{padding-block:10px}
+  .nav-cta{flex-direction:column;align-items:stretch;gap:6px}
+  .nav-cta .btn.small{padding:8px 16px}
+  .nav-cta .alert-btn{justify-content:center;padding:5px 14px;font-size:12.5px}
+}
