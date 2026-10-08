@@ -344,3 +344,9 @@ button[disabled]{opacity:.6;cursor:wait}
 /* logo identical in header and footer */
 .logo{color:var(--fg)}
 .foot .logo{font-size:19px}
+
+/* longer brand name: keep header on one line */
+@media (min-width:981px) and (max-width:1180px){.nav-cta .btn{display:none}.menu > li > a{padding-inline:9px}}
+@media (max-width:420px){.logo{font-size:15.5px;gap:8px}.logo svg{width:22px;height:22px}}
+.menu > li:last-child > .dropdown{left:auto;right:0;min-width:260px}
+@media (max-width:1180px){.dropdown{min-width:270px}}
