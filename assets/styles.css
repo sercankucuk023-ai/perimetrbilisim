@@ -350,3 +350,4 @@ button[disabled]{opacity:.6;cursor:wait}
 @media (max-width:420px){.logo{font-size:15.5px;gap:8px}.logo svg{width:22px;height:22px}}
 .menu > li:last-child > .dropdown{left:auto;right:0;min-width:260px}
 @media (max-width:1180px){.dropdown{min-width:270px}}
+.contact h2{color:var(--fg)}
