@@ -307,7 +307,6 @@ button[disabled]{opacity:.6;cursor:wait}
 .dropdown a small{font-weight:400;font-size:12.5px;color:var(--dim);line-height:1.35}
 .dropdown a:hover{background:var(--panel-2);border-left-color:var(--accent)}
 .dropdown a:hover b{color:var(--accent)}
-.menu > li:nth-last-child(-n+2) .dropdown{left:auto;right:0}
 .menu > li:hover > a .caret,.menu > li:focus-within > a .caret{transform:rotate(225deg) translateY(-2px)}
 .menu .caret{transition:transform .2s}
 
@@ -337,3 +336,7 @@ button[disabled]{opacity:.6;cursor:wait}
 .faq-page{display:grid;gap:12px;max-width:900px}
 .faq-group{font-family:var(--font-mono);font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-top:36px}
 .faq-group:first-child{margin-top:0}
+
+/* dropdown open/close: stays open briefly so the pointer can travel into it */
+.dropdown{display:grid!important;visibility:hidden;opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s,visibility 0s linear .25s;z-index:30}
+.menu > li:hover > .dropdown,.menu > li:focus-within > .dropdown{visibility:visible;opacity:1;transform:none;transition-delay:0s;z-index:31}
